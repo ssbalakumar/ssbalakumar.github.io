@@ -1,0 +1,298 @@
+/*Master Reset*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: bottom; background: transparent;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {
+ display: block
+}
+
+* {
+ margin: 0; padding: 0;
+}
+
+*, :before, :after {
+ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+html {
+ -webkit-font-smoothing: antialiased; font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 100; color:#000; text-rendering: optimizeLegibility; line-height: 1.1; margin-bottom: 14px; margin-top: 14px; text-transform:capitalize;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+ font-size: 60%; color: #6f6f6f; line-height: 0;
+}
+
+h1 {
+ font-size: 44px
+}
+
+h2 {
+ font-size: 37px
+}
+
+h3 {
+ font-size: 27px
+}
+
+h4 {
+ font-size: 23px
+}
+
+h5 {
+ font-size: 17px
+}
+
+h6 {
+ font-size: 14px
+}
+
+label, select {
+ cursor: pointer
+}
+
+li {
+ line-height: 15px; margin: 5px 0 0 0;
+}
+
+ol, ul {
+ /*padding: 0 0 10px 35px*/
+}
+
+p {
+ font-family: inherit; font-weight: normal; font-size: 15px; line-height: 1.6; margin:0 auto; font-weight:300
+}
+
+textarea, input {
+ font: 11px arial,helvetica,sans-serif; padding: 2px;
+}
+
+hr {
+ border: solid #ddd; clear: both; height: 0; border-width: 1px 0 0; margin: 22px 0 21px;
+}
+
+em, i {
+ font-style: italic; line-height: inherit;
+}
+
+strong, b {
+ font-weight: 700; line-height: inherit;
+}
+
+small {
+ font-size: 60%; line-height: inherit;
+}
+
+code {
+ font-weight: 700; background: #ff9;
+}
+
+ul, ol, dl {
+ font-size: 14px; line-height: 1.6; margin-bottom: 17px; list-style-position: outside;
+}
+
+ol {
+ margin-left: 20px
+}
+
+blockquote, blockquote p {
+ line-height: 1.5; color: #6f6f6f;
+}
+
+blockquote {
+ border-left: 1px solid #ddd; margin: 0 0 17px; padding: 9px 20px 0 19px;
+}
+
+blockquote cite {
+ display: block; font-size: 13px; color: #555;
+}
+
+blockquote cite:before {
+ content: "\2014 \0020"
+}
+
+blockquote cite a, blockquote cite a:visited {
+ color: #555
+}
+
+abbr, acronym {
+ text-transform: uppercase; font-size: 90%; color: #222; border-bottom: 1px solid #ddd; cursor: help;
+}
+
+abbr {
+ text-transform: none
+}
+
+.clear {
+ clear: both
+}
+
+.clearfix, section, .row {
+ *zoom: 1
+}
+
+.clearfix:before, section:before, .row:before, .clearfix:after, section:after, .row:after {
+ display: table; content: "";
+}
+
+.clearfix:after, section:after, .row:after {
+ clear: both
+}
+
+.input {
+ border: 1px solid #ccc; padding: 2px;
+}
+
+.page-break, .print-only {
+ display: none
+}
+
+.point {
+ cursor: pointer
+}
+
+a {
+ color: inherit
+}
+
+a:link, a:visited {
+ color: #5C5C5C; text-decoration: none;
+}
+
+a:hover, a:active {
+ color: #303; text-decoration: none;
+}
+
+img {
+ border: 0;width:100%
+ 
+}
+
+p a, p a:visited {
+ line-height: inherit
+}
+
+/*Some Custom Style*/
+
+.text-left {
+ text-align: left
+}
+
+.text-right {
+ text-align: right
+}
+
+.text-center {
+ text-align: center !important
+}
+
+.hide {
+ display: none
+}
+
+.hide-override {
+ display: none!important
+}
+
+.highlight {
+ background: #ff9
+}
+
+/*Responsive Grids*/
+
+.row {
+ clear: both; width: 960px; max-width: 100%; min-width: 240px; zoom: 1; margin: 0 auto;
+}
+
+.row .row {
+ width: auto; max-width: none; min-width: 0;
+}
+
+[class*="row"] {
+ zoom: 1
+}
+
+[class*="row"]:before, [class*="row"]:after {
+ content: ""; display: table;
+}
+
+[class*="row"]:after {
+ clear: both
+}
+
+[class^=col-] {
+ min-height: 1px; float: left; padding: 0 2%; position: relative;
+}
+
+.row>[class*="col"]:first-child {
+ padding-left: 0
+}
+
+.row>[class*="col"]:last-child {
+ padding-right: 0
+}
+
+.col-1, .row .col-1 {
+ width: 8.33333%
+}
+
+.col-2, .row .col-2 {
+ width: 16.66667%
+}
+
+.col-3, .row .col-3 {
+ width: 25%
+}
+
+.col-4, .row .col-4 {
+ width: 33.33333%
+}
+
+.col-5, .row .col-5 {
+ width: 41.66667%
+}
+
+.col-6, .row .col-6 {
+ width: 50%
+}
+
+.col-7, .row .col-7 {
+ width: 58.33333%
+}
+
+.col-8, .row .col-8 {
+ width: 66.66667%
+}
+
+.col-9, .row .col-9 {
+ width: 75%
+}
+
+.col-10, .row .col-10 {
+ width: 83.33333%
+}
+
+.col-11, .row .col-11 {
+ width: 91.66667%
+}
+
+.col-12, .row .col-12 {
+ width: 100%
+}
+
+@media handheld,only screen and (max-width:1060px) { 
+ .row{
+   padding:0 30px !important;
+ }
+}
+
+@media handheld,only screen and (max-width:768px) { 
+    .row>[class^=col-] {
+     width: 100%; margin: 0 auto; padding: 0 !important;
+    }
+}
